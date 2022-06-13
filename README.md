@@ -25,10 +25,6 @@
 
 #
 
-<p align="center">𝐇𝐞𝐫𝐨𝐤𝐮 𝐃𝐞𝐩𝐥𝐨𝐲𝐦𝐞𝐧𝐭 𝐓𝐮𝐭𝐨𝐫𝐢𝐚𝐥</p>
-
-<p align="center"><a href="https://youtu.be/nQAyresJTC0"> <img src="https://img.shields.io/badge/Youtube%20Deploy-red?style=for-the-badge&logo=youtube" width="220" height="38.45"/></a></p>
-
 ## ᴄᴏᴍᴍᴀɴᴅꜱ 
 
 [CLICK HERE](https://t.me/AdrishUpdates)
@@ -80,32 +76,9 @@
 
 <img src="https://telegra.ph/file/97e6de197eba98d2caba5.jpg" align="right" width="350" height="700"/>
 
-### 🚀 Deploy Process
-- Click on the deploy button above and login to your [heroku account](https://heroku.com/login) .
-- Fill your values there.
-- If you don't know how to get config vars : [Please refer here](https://github.com/TeamAdrish/AdrishVcPlayer/blob/main/sample.env)
-- Make sure you fill correct values.
-- Click on **Deploy** button.
-- Please wait till the app gets deployed on heroku. Deploying can take upto **2-3 mins**..
-- When your app is successfully deployed, click on **Manage App** button.
+### 🚀 Deploy to Heroku
 
-
-### 🚀 Booting Process
-- Search for **Resources** Tab inside your app. ( Check Image for more details)
-- Click on the **Pencil Icon** under resources section.
-- Turn **on** the **switch** present there near pencil icon.
-- Congrats your Music Bot is now **Booting**.
-
-
-### 🚀 Checking Logs
-- After Turning on your booting .
-- Click on the **More Button** present at top right corner .
-- Click on the **View Logs** button from the drop down menu.
-- You check your logs there!
-- Click on save button there at bottom to save your logs and forward it to us on [@Bot_Support](https://t.me/Superior_Support) if you face any problem
-
-</details>
-
+[![Deploy+On+Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/teamadrish/adrishVCplayer)
 
 ## 🚀 Okteto Deployment
 
