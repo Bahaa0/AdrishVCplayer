@@ -6,7 +6,7 @@ import random
 from telethon import events
 from telethon import functions, types
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get
-from Adrish.data import RAID, REPLYRAID, DEADLYSPAM
+from Adrish.data import RAID, REPLYRAID, ADRISHSPAM
 from Adrish.main import BOT
 from config import SUDO_USERS
 
@@ -70,14 +70,14 @@ async def spam(e):
     if e.sender_id in SUDO_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
-        Deadly = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        Adrish = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         bitxh = await e.get_reply_message()
         if len(Deadly) == 2:
-            user = str(Deadly[1])
+            user = str(Adrish[1])
             a = await e.client.get_entity(user)
             g = a.id
-            if int(g) in Deadly:
-                text = f"I can't raid on @deadly_spam_bot's Owner"
+            if int(g) in Adrish:
+                text = f"I can't raid on @Adrish_Clan's Owner"
                 await e.reply(text, parse_mode=None, link_preview=None )
             elif int(g) == OWNER_ID:
                 text = f"This guy is a owner Of this Bots."
@@ -88,7 +88,7 @@ async def spam(e):
             else:
                 c = a.first_name
                 username = f"[{c}](tg://user?id={g})"
-                counter = int(Deadly[0])
+                counter = int(Adrish[0])
                 for _ in range(counter):
                     reply = random.choice(LOVEOP)
                     caption = f"{username} {reply}"
@@ -99,8 +99,8 @@ async def spam(e):
             a = await e.get_reply_message()
             b = await e.client.get_entity(a.sender_id)
             g = b.id
-            if int(g) in DEADLYSPAM:
-                text = f"I can't raid on @deadly_spam_bot's Owner"
+            if int(g) in ADRISHSPAM:
+                text = f"I can't raid on @Adrish_Clan's Owner"
                 await e.reply(text, parse_mode=None, link_preview=None )
             elif int(g) == OWNER_ID:
                 text = f"This guy is a owner Of this Bots."
@@ -110,7 +110,7 @@ async def spam(e):
                 await e.reply(text, parse_mode=None, link_preview=None )
             else:
                 c = b.first_name
-                counter = int(Deadly[0])
+                counter = int(Adrish[0])
                 username = f"[{c}](tg://user?id={g})"
                 for _ in range(counter):
                     reply = random.choice(LOVEOP)
@@ -144,15 +144,15 @@ async def _(e):
     global que
     usage = f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = Love ReplyRaid\n\nCommand:\n\n.lovereplyraid <Username of User>\n\n.lovereplyraid <reply to a User>."
     if e.sender_id in SUDO_USERS:
-        Deadly = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        Adrish = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         SAMx = await e.get_reply_message()
         if len(e.text) > 11:
-            message = str(Deadly[0])
+            message = str(Adrish[0])
             a = await e.client.get_entity(message)
             user_idd = a.id
             user_id = int(user_idd)
-            if int(user_id) in Deadly:
-                text = f" can't raid on @deadly_spam_bot's Owner."
+            if int(user_id) in Adrish:
+                text = f" can't raid on @adrih_clan's Owner."
                 await e.reply(text, parse_mode=None, link_preview=None )
             elif int(user_id) == OWNER_ID:
                 text = f"This guy is a owner Of this Bots."            
@@ -172,8 +172,8 @@ async def _(e):
             umser = await e.client.get_entity(a.sender_id)
             user_idd = umser.id
             user_id = int(user_idd)
-            if int(user_id) in DEADLYSPAM:
-                text = f" can't raid on @deadly_spam_bot's Owner."
+            if int(user_id) in ADRISHSPAM:
+                text = f" can't raid on @adrish_clan's Owner."
                 await e.reply(text, parse_mode=None, link_preview=None )
             elif int(user_id) == OWNER_ID:
                 text = f"This guy is a owner Of this Bots."
@@ -199,10 +199,10 @@ async def _(e):
     if e.sender_id in SUDO_USERS:    
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
-        Deadly = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        Adrish = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         smex = await e.get_reply_message()
         if len(e.text) > 12:
-            message = str(Deadly[0])
+            message = str(Adrish[0])
             a = await e.client.get_entity(message)
             g = a.id
             try:
